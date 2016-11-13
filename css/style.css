@@ -1,0 +1,201 @@
+body{
+    width:100%;
+    font-family: fantasy;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#calculator{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#calculator .container-input{
+    width: 100%;
+    background-color: cornsilk;
+    height: 100px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+#calculator .container-input input{
+    height: 95%;
+    width: 50%;
+    background-color: black;
+    color: azure;
+    font-size: 50px;
+    text-align: center; 
+    border: solid 5px;
+    border-color: gold;
+    padding: -5px;
+}
+
+#calculator .container-operators{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#calculator .container-operators .top-operators{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#calculator .container-operators .bot-operators{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#calculator .operator{
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 15px;
+    background-color: gold;
+}
+
+#calculator .operator:hover{
+    padding: 10px;
+    border: solid 5px;
+}
+
+clickOperator{
+    padding: 10px;
+    border: solid 5px;
+    background-color: crimson;
+}
+
+.operator h1{
+    font-size: 100px;
+}
+
+#calculator .operator:hover > h1{
+    font-size: 150px;
+}
+
+#judge{
+    width:40%;
+    display: inherit;
+    flex-direction: column;
+}
+
+#judge .guess-answer{
+    width:100%;
+    display: inherit;
+    flex-direction: row;
+}
+
+.guess-answer #your-answer{
+    width: 80%;
+    height: 95px;
+    background-color: black;
+    color: azure;
+    font-size: 50px;
+    text-align: center; 
+    border: solid 4px;
+    border-color: gold;
+    display: block;
+}
+
+.guess-answer #message{
+    display: none;
+    width: 80%; 
+    height: 97px;
+    background-color: black;
+    color: gold;
+    font-size: 50px;
+    text-align: center; 
+    border: solid 4px;
+    border-color: gold;
+    align-items: center;
+    justify-content: center;
+}
+
+.guess-answer #continue-button{
+    width: 20%  ;
+    background-color: gold;
+    font-family: fantasy;
+    font-size: 24px;
+    border: solid 5px;
+    border-color: gold;
+    text-decoration: underline;
+}
+
+#judge .container-final-answers{
+    display: inherit;
+    width: 100%;
+}
+
+.container-final-answers .container-images {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black ;
+    justify-content: space-around;
+}
+
+.container-images #start-img{
+    width: 95%;
+    height: auto;
+    display: block;
+}
+
+.container-images #approves-img{
+    display:none;
+    width: 100%;
+    height: auto;
+}
+
+.container-images #disapproves-img{
+    display:none;
+    width: 100%;
+    height: auto;
+}
+
+.container-final-answers .container-answers{
+    display:none;
+    width: 20%;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-answers #answer{
+    display: flex;
+    color: gold;
+    font-size: 50px;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container-answers #correct-answer{
+    display: flex;
+    color: gold;
+    font-size: 50px;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+}
+/* Correct*/
+
+.container-images #start-img{
+    width: 95%;
+    height: auto;
+    
+}
+
+/* Incorrect*/
+

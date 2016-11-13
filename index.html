@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>
+        jQuery: Calculator!
+    </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <div id="calculator">
+        <div class="container-input">
+            <input id="operand1" type="number" placeholder="First Operand">
+            <input id="operand2" type="number" placeholder="Second Operand">
+        </div>
+        <div class="container-operators">
+            <div class="top-operators">
+                <div class="operator" id="plus">
+                    <h1>+</h1>
+                </div>
+                <div class="operator" id="minus">
+                    <h1>-</h1>
+                </div>
+            </div>
+            <div class="bot-operators">
+                <div class="operator" id="divide">
+                    <h1>/</h1>
+                </div>
+                <div class="operator" id="multiply">
+                    <h1>X</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="judge">
+        <div class="guess-answer">
+            <input id="your-answer" type="number" placeholder="Guess the answer">
+            <div id="message">  
+            </div>
+            <input id="continue-button" type="button" value="Continue">
+        </div>
+        <div class="container-final-answers">
+            <div class="container-images">
+                <img id="start-img" src="img/you%20gonna%20finish%20those%20operations.jpg">
+                <img id="disapproves-img" src="img/disapproves.jpg">
+                <img id="approves-img" src="img/drake.jpg">
+            </div>
+            <div class="container-answers">
+                <div id="answer">
+                    <h1 id="answer-number"></h1>
+                </div>
+                <div id="correct-answer">
+                    <h1 id="correct-answer-number"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
